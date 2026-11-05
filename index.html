@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanush Shenoy | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#09090b',
+                        surface: '#121215',
+                        surfaceBorder: '#27272a',
+                        accent: '#e4e4e7',
+                        muted: '#a1a1aa'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-background text-zinc-100 font-sans antialiased selection:bg-zinc-800 selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-surfaceBorder/50">
+        <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#hero" class="text-sm font-mono tracking-tight text-zinc-200 hover:text-white transition-colors">
+                dhanush<span class="text-zinc-500">.shenoy()</span>
+            </a>
+            <nav class="hidden sm:flex items-center space-x-6 text-xs font-mono text-muted">
+                <a href="#about" class="hover:text-white transition-colors">/about</a>
+                <a href="#projects" class="hover:text-white transition-colors">/projects</a>
+                <a href="#skills" class="hover:text-white transition-colors">/skills</a>
+                <a href="#contact" class="hover:text-white transition-colors">/contact</a>
+            </nav>
+            <div class="flex items-center space-x-3">
+                <a href="https://github.com/abbysallord" target="_blank" class="p-2 text-muted hover:text-white transition-colors rounded-lg hover:bg-surface">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                </a>
+                <a href="#contact" class="px-3 py-1.5 text-xs font-mono bg-zinc-100 text-zinc-950 font-medium rounded-md hover:bg-zinc-300 transition-colors">
+                    Get in touch
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 pt-32 pb-20 flex-grow w-full space-y-28">
+
+        <!-- Hero Section -->
+        <section id="hero" class="space-y-6">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-surface border border-surfaceBorder text-xs text-zinc-400 font-mono">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Available for engineering roles & projects</span>
+            </div>
+            
+            <div class="space-y-4">
+                <h1 class="text-4xl sm:text-6xl font-bold tracking-tight text-white">
+                    Dhanush Shenoy H
+                </h1>
+                <p class="text-xl sm:text-2xl text-muted font-light max-w-2xl leading-relaxed">
+                    Computer Science Student & Systems Architect building high-performance web applications, AI agents, and developer tooling.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="#projects" class="px-5 py-2.5 rounded-lg bg-zinc-100 text-zinc-950 font-medium text-sm hover:bg-zinc-300 transition-all flex items-center space-x-2">
+                    <span>View Selected Works</span>
+                    <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+                </a>
+                <a href="https://github.com/abbysallord" target="_blank" class="px-5 py-2.5 rounded-lg bg-surface border border-surfaceBorder text-zinc-300 font-medium text-sm hover:bg-zinc-800/60 hover:text-white transition-all flex items-center space-x-2">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span>GitHub Profile</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="space-y-6 pt-6 border-t border-surfaceBorder/40">
+            <h2 class="text-xs font-mono uppercase tracking-widest text-zinc-500">// ABOUT ME</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="md:col-span-2 space-y-4 text-zinc-400 leading-relaxed font-light text-base">
+                    <p>
+                        I focus on full-stack software development, distributed systems, and intelligent multi-stage automated pipelines. My philosophy centers on minimal footprint, high performance, and robust software architecture.
+                    </p>
+                    <p>
+                        Currently pursuing Computer Science Engineering while developing autonomous developer workflows, deterministic security analyzers, and cloud applications.
+                    </p>
+                </div>
+                <div class="p-5 rounded-xl bg-surface border border-surfaceBorder space-y-3 font-mono text-xs">
+                    <div class="text-zinc-400">FOCUS AREAS</div>
+                    <ul class="space-y-2 text-zinc-300">
+                        <li class="flex items-center space-x-2">
+                            <span class="text-zinc-600">›</span>
+                            <span>Distributed Systems</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-zinc-600">›</span>
+                            <span>AI Agent Frameworks</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-zinc-600">›</span>
+                            <span>Full-Stack Web Architecture</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-zinc-600">›</span>
+                            <span>Automated Testing & Security</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Projects Section -->
+        <section id="projects" class="space-y-8 pt-6 border-t border-surfaceBorder/40">
+            <div class="flex items-center justify-between">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-zinc-500">// FEATURED PROJECTS</h2>
+                <a href="https://github.com/abbysallord" target="_blank" class="text-xs font-mono text-zinc-400 hover:text-white transition-colors flex items-center space-x-1">
+                    <span>view github</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6">
+                <!-- Project 1 -->
+                <div class="group p-6 rounded-xl bg-surface/60 border border-surfaceBorder hover:border-zinc-700 transition-all space-y-4">
+                    <div class="flex items-start justify-between">
+                        <div class="space-y-1">
+                            <h3 class="text-lg font-semibold text-zinc-100 group-hover:text-white transition-colors">
+                                Autonomous Repo Reviewing Agent
+                            </h3>
+                            <p class="text-xs font-mono text-zinc-500">Node.js • AST Parsers • Gemini API • GitHub Webhooks</p>
+                        </div>
+                        <a href="https://github.com/abbysallord/repo-review-agent" target="_blank" class="p-2 text-zinc-400 hover:text-white transition-colors rounded-lg bg-zinc-900 border border-surfaceBorder">
+                            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <p class="text-sm text-zinc-400 font-light leading-relaxed">
+                        Multi-stage PR analysis tool featuring AST parsing, security heuristics scan, inline replacement diff generation, and token-optimized diff summarization.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-zinc-800 text-xs font-mono text-zinc-400">TypeScript</span>
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-zinc-800 text-xs font-mono text-zinc-400">Tree-sitter</span>
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-zinc-800 text-xs font-mono text-zinc-400">LLM Pipeline</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group p-6 rounded-xl bg-surface/60 border border-surfaceBorder hover:border-zinc-700 transition-all space-y-4">
+                    <div class="flex items-start justify-between">
+                        <div class="space-y-1">
+                            <h3 class="text-lg font-semibold text-zinc-100 group-hover:text-white transition-colors">
+                                Gourmet Bliss Interactive Platform
+                            </h3>
+                            <p class="text-xs font-mono text-zinc-500">Tailwind CSS • JavaScript • Cloudflare Pages</p>
+                        </div>
+                        <a href="https://gourmet-bliss-cafe.pages.dev" target="_blank" class="p-2 text-zinc-400 hover:text-white transition-colors rounded-lg bg-zinc-900 border border-surfaceBorder">
+                            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <p class="text-sm text-zinc-400 font-light leading-relaxed">
+                        High-performance responsive culinary storefront with category filtering, automated table reservation workflow, and instant cloud edge delivery.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-zinc-800 text-xs font-mono text-zinc-400">HTML5</span>
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-zinc-800 text-xs font-mono text-zinc-400">Tailwind</span>
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-zinc-800 text-xs font-mono text-zinc-400">Edge Deployment</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group p-6 rounded-xl bg-surface/60 border border-surfaceBorder hover:border-zinc-700 transition-all space-y-4">
+                    <div class="flex items-start justify-between">
+                        <div class="space-y-1">
+                            <h3 class="text-lg font-semibold text-zinc-100 group-hover:text-white transition-colors">
+                                Distributed Microservices Engine
+                            </h3>
+                            <p class="text-xs font-mono text-zinc-500">Python • Redis • Docker • REST API</p>
+                        </div>
+                        <a href="https://github.com/abbysallord" target="_blank" class="p-2 text-zinc-400 hover:text-white transition-colors rounded-lg bg-zinc-900 border border-surfaceBorder">
+                            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <p class="text-sm text-zinc-400 font-light leading-relaxed">
+                        Asynchronous event-driven backend service architecture designed for fault tolerant task queueing and low-latency payload caching.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-zinc-800 text-xs font-mono text-zinc-400">Python</span>
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-zinc-800 text-xs font-mono text-zinc-400">Redis</span>
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-zinc-800 text-xs font-mono text-zinc-400">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section id="skills" class="space-y-6 pt-6 border-t border-surfaceBorder/40">
+            <h2 class="text-xs font-mono uppercase tracking-widest text-zinc-500">// TECHNICAL SKILLS</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div class="p-5 rounded-xl bg-surface border border-surfaceBorder space-y-3">
+                    <div class="text-sm font-semibold text-zinc-200">Languages</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-surfaceBorder text-xs font-mono text-zinc-400">TypeScript</span>
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-surfaceBorder text-xs font-mono text-zinc-400">JavaScript</span>
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-surfaceBorder text-xs font-mono text-zinc-400">Python</span>
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-surfaceBorder text-xs font-mono text-zinc-400">C/C++</span>
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-surfaceBorder text-xs font-mono text-zinc-400">SQL</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-xl bg-surface border border-surfaceBorder space-y-3">
+                    <div class="text-sm font-semibold text-zinc-200">Frameworks & Web</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-surfaceBorder text-xs font-mono text-zinc-400">Node.js</span>
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-surfaceBorder text-xs font-mono text-zinc-400">React</span>
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-surfaceBorder text-xs font-mono text-zinc-400">Express</span>
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-surfaceBorder text-xs font-mono text-zinc-400">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-xl bg-surface border border-surfaceBorder space-y-3">
+                    <div class="text-sm font-semibold text-zinc-200">Infrastructure & Tools</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-surfaceBorder text-xs font-mono text-zinc-400">Git / GitHub</span>
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-surfaceBorder text-xs font-mono text-zinc-400">Docker</span>
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-surfaceBorder text-xs font-mono text-zinc-400">Cloudflare Pages</span>
+                        <span class="px-2.5 py-1 rounded bg-zinc-900 border border-surfaceBorder text-xs font-mono text-zinc-400">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="space-y-6 pt-6 border-t border-surfaceBorder/40">
+            <h2 class="text-xs font-mono uppercase tracking-widest text-zinc-500">// CONNECT</h2>
+            <div class="p-8 rounded-2xl bg-surface border border-surfaceBorder flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-2 text-center md:text-left">
+                    <h3 class="text-xl font-semibold text-white">Let's build something together.</h3>
+                    <p class="text-sm text-zinc-400 font-light">Open to software engineering opportunities, tech collaborations, and inquiries.</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <a href="https://github.com/abbysallord" target="_blank" class="px-5 py-2.5 rounded-lg bg-zinc-100 text-zinc-950 font-medium text-sm hover:bg-zinc-300 transition-all flex items-center space-x-2">
+                        <i data-lucide="github" class="w-4 h-4"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-surfaceBorder/40 py-8 bg-background">
+        <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-500">
+            <div>
+                © 2026 Dhanush Shenoy H. All rights reserved.
+            </div>
+            <div class="flex items-center space-x-4">
+                <span>Designed & Deployed with Shenoy</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
